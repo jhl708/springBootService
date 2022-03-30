@@ -1,6 +1,6 @@
-package com.hr.springBootService.test.web;
+package com.hr.springBootService.web;
 
-import com.hr.springBootService.test.web.dto.HelloResponseDto;
+import com.hr.springBootService.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

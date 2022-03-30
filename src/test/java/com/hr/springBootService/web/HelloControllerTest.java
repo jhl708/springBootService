@@ -1,4 +1,4 @@
-package com.hr.springBootService.test.web;
+package com.hr.springBootService.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ public class HelloControllerTest {
 
     @Test
     public void hello가_리턴된다() throws Exception{
-        String hello = "hello";
+        String hello = "HELLO!!!";
 
         mvc.perform(get("/hello")).andExpect(status().isOk()).andExpect(content().string(hello));
     }
@@ -29,7 +29,7 @@ public class HelloControllerTest {
         int amount = 1000;
 
         mvc.perform(get("/hello/dto").param("name", name)
-                                                .param("amount", String.valueOf(amount)));
+                .param("amount", String.valueOf(amount)));
 
     }
 }

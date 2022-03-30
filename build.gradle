@@ -37,9 +37,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'*/
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.projectlombok:lombok")
+    testCompile ('org.springframework.boot:spring-boot-starter-test')
+    //Spring Data Jpa 적용시키기
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
-    testCompile ('org.springframework.boot:spring-boot-starter-test')
+
 }
 
 test {
